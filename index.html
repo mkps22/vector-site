@@ -1,0 +1,382 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                outline: 0px;
+                box-sizing: border-box;
+
+            }
+            nav{
+                width: 100%;
+                height: 6vh;
+                background-color: black;
+                color: rgb(247, 247, 247);
+                display: flex;
+            }
+            .left{
+                width: 39%;
+                display: flex;
+                justify-content: space-evenly;
+                padding-left: 10%;
+                height: 100%;
+                align-items: center;
+            }
+            .left a{
+                text-decoration: none;
+                color: white;
+                transition: all 1s;
+            }
+            .sa{
+                color: #EC751C;
+               margin-left: 12%;
+            }
+            .left a:hover{
+                color: #EC751C;
+            }
+            .ab:hover{
+                color: #EC751C;
+
+            }
+            .ab{
+                transition: all 1s;
+                cursor: pointer;
+            }
+            .right{
+                width: 35%;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 20%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+            .right div a:hover{
+                color: #EC751C;
+                cursor: pointer;
+            }
+            .right div a{
+                text-decoration: none;
+                color: white;
+                transition: all 1s;
+            }
+            .mid{
+                background-color: rgb(255, 255, 255);
+                height: 15vh;
+                width: 100%;
+                display: flex;
+            }
+            .lem{
+                width: 20%;
+                height: 97%;
+               margin-left: 9%;
+            }
+            .img img{
+                width: 100%;
+                height: 100%;
+                padding: 5%;
+                border-radius: 1ic;
+                cursor: pointer;
+            }
+            .mir{
+                width: 65%;
+                display: flex;
+                justify-content: space-around;
+                margin-left: 2%;
+                align-items: center;
+                padding: 10px;
+                }
+            .mir div{
+                position: relative;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+               }
+            .line{
+                width: 0%;
+                position: absolute;
+                height: 3px;
+                background-color: #EC751C;
+                transition: all 1s;
+                left: 50%;
+              }
+            .mir div:hover .line{
+                width: 100%;
+                left: 0%;
+               }
+            .vec{
+                width: 100%;
+                height: 79vh;
+                background-image: url("vector.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+            }
+            .midl{
+                width: 60%;
+                height: 50%;
+           margin-left: 10%;
+              font-size: 370%;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              word-spacing: 1px;
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              top: 18%;
+            }
+            .sm{
+                width: 60%;
+                margin-left: 10%;
+                font-size: 20px;
+                height: 10%;
+                position: relative;
+                top: 9%;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                word-spacing: 1px;
+                }
+            .so{
+                height: 25%;
+                width: 6%;
+               
+               position: absolute;
+               right: 0px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               margin-top: 7%;
+            }
+            .pa{
+                height: 18%;
+                width: 35%;
+                background-color: #2767B2;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+               border-radius: 50%;
+               animation: rotate 1s linear ;
+               }
+               @keyframes rotate{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(359deg);
+                }
+               }
+            .ap {
+                font-size: 17px;
+                color: white;
+                padding: 20px;
+               
+            }
+            .pad{
+                height: 18%;
+                width: 35%;
+                background-color: #1EA1F1;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+               border-radius: 50%;
+               animation: rotate 1s linear ;
+               }
+            .pada{
+                height: 18%;
+                width: 35%;
+                background-color: #EF0075;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+               border-radius: 50%;
+               animation: rotate 1s linear ;
+               }
+            a{
+                text-decoration: none;
+            }
+            .chat{
+                width: 10%;
+                height: 20%;
+          
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                }
+            .box{
+                width: 110%;
+                height: 340%;
+               
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+               justify-content: space-evenly;
+                align-items: center;
+                border: 5px groove rgb(95, 222, 228);
+                border-radius: 1ic;}
+           
+            .box input{
+                height: 200%;
+                width: 180%;
+                margin-left: -40%;
+                padding-left: 5%;
+                color: black;
+                font-size: 17px ;
+                border: 1px solid #EC751C;
+                }
+            .box ::placeholder{
+                font-size: 17px;
+                color: black;
+                font-weight: 100;
+            }
+            textarea{
+                padding-left: 5%;
+                border: 1px solid #EC751C;
+            }
+            .box h3{
+                color: black;
+                font-weight: 100;
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .box button{
+                background-color: #EC751C;
+                color: rgb(255, 255, 255);
+                height: 200%;
+                width: 200%;
+                font-size: 20px;
+                border-radius: 0.5ic;
+                position: relative;
+                left: -50%;
+                border: 1px solid #EC751C;
+                cursor: pointer;
+            }
+            .ne{
+                position: relative;
+                left: 0%;
+                background-color: #E27513;
+                width: 90%;
+                height: 20%;
+                border-radius: 2ic;
+                text-align: center;
+                cursor: pointer;
+            }
+            .en{
+                position: absolute;
+                width: 100%;
+                height:800%;
+                display: none;
+                flex-direction: column;
+            }
+            .ne:hover .en{
+                display: flex;
+                right: 75%;
+                bottom: 20%;
+                height: 2000%;
+                width: 300%;
+            }
+            .chat a{
+                text-decoration: none;
+                color: black;
+               position: relative;
+               top: 22%;
+               color: white;
+               }
+            .tet{
+                width: 90%;
+                height: 20%;
+               text-align: center;
+                position: relative;
+               background-color: #53CE5F;
+                border-radius: 2ic;
+                }
+            .dad{
+                padding-left: 5%;
+                color: white;
+            }.tett{
+                width: 90%;
+                height: 20%;
+               text-align: center;
+                position: relative;
+               background-color: #5C5D5E;
+                border-radius: 2ic;
+                }
+            .ne span{
+               position: relative;
+               top: 12%;
+               color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <i class="sa fa-solid fa-envelope"></i> <div><a href="info@vectorindia.org">info@vectorindia.org</a></div>
+                <i class="sa fa-solid fa-phone"></i> <div class="ab">+91 98666 66699</div>
+            </div>
+            <div class="right">
+                 <div class="abc"><a href="https://www.vectorindia.org/admissions.html">Admission</div></a>
+                 <div class="abc"><a href="https://www.vectorindia.org/student-login.html">Student Login</div></a>
+                 <div class="abc"><a href="https://www.vectorindia.org/registration">Apply Online</div></a>
+                <div class="abc"><a href="https://www.vectorindia.org/contact-us.html">Quick Enquiry</div></a>
+                 <div class="abc"><a href="https://www.vectorindia.org/photogallery.html">Gallery</div></a>
+            </div>
+        </nav>
+        <div class="mid">
+            <div class="lem">
+                <div class="img"><img src="https://www.vectorindia.org/assets/images/resources/logo.png" alt=""></div>
+            </div>
+            <div class="mir">
+                <div>Institute <div class="line"></div></div>
+                <div>Embaded System<div class="line"></div></div>
+                <div>Full Stack Development<div class="line"></div></div>
+                <div>Short Term Courses<div class="line"></div></div>
+                <div>Corporates<div class="line"></div></div>
+                <div>Institute <div class="line"></div></div>
+                <div>Workshops<div class="line"></div></div>
+                <div>Placements<div class="line"></div></div>
+            </div>
+        </div>
+        <div class="vec">
+            <div class="midl">
+                <div>India's Leading</div>
+                <div>Embedded Systems</div>
+                <div>Training Institute</div>
+            </div>
+            <div class="sm">
+                <div>Making students industry-ready</div>
+                <div>with application-oriented training program!</div>
+            </div>
+            <div class="so">
+             <div class="pa"><a href="https://www.linkedin.com/company/vectorindia/"><i class="ap fa-brands fa-linkedin"></i></div></a>
+             <div class="pa"><a href="https://www.facebook.com/VectorInstitute"> <i class="ap fa-brands fa-facebook"></i></div></a>
+                <div class="pad"> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FVector_India"><i class="ap fa-brands fa-twitter"></i></div></a>
+                    <div class="pada"><a href="https://www.instagram.com/vectorindiainstitute"> <i class="ap fa-brands fa-instagram"></i></div></a>
+                </div>
+            <div class="chat">
+                <div class="tett"><a href="https://www.vectorindia.org/registration">Apply Online</div></a>
+                <div class="ne"><span>Quick Enquiry</span>
+                    <div class="en">
+                        <div class="box">
+                            <h3>Request a call back</h3>
+                            <div><input type="text" placeholder="Full Name"></div>
+                            <div><input type="email" placeholder="Email Id"></div>
+                            <div><input type="number" placeholder="Phone number"></div>
+                            <div><textarea name="" id="" cols="30" rows="10" placeholder="Enquiry"></textarea></div>
+                            <div><button>Submit</button></div>
+                           </div>
+                    </div>
+                </div>
+                <div class="tet"><a href="https://wa.me/+919866666699">Chat With us<i class="dad fa-brands fa-whatsapp"></i></div></a>
+                </div>
+        </div>
+    </body>
+</html>
